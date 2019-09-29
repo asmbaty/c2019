@@ -3,7 +3,7 @@
 #include <vector>
 #include <algorithm>
 
-void insertion_sort(std::vector<int>& arr)
+void selection_sort(std::vector<int>& arr)
 {
     for(auto iter = arr.begin(); iter != arr.end(); ++iter) {
         auto min = std::min_element(iter, arr.end());
@@ -15,7 +15,7 @@ void insertion_sort(std::vector<int>& arr)
 int main(int argc, char const *argv[])
 {
     std::vector<int> arr {5, 2, 3, 4, 1};
-    insertion_sort(arr);
+    selection_sort(arr);
     for(const auto& elem : arr) {
         std::cout << elem << ' ';
     }
