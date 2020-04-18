@@ -1,1 +1,1 @@
-## Testing **modern** of C++
+## Testing **modern** C++ features
