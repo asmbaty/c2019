@@ -17,6 +17,7 @@ int main(int argc, char const *argv[])
         }
         return true;
     };
+    auto is_less = [](int num) { return [num](const auto& value){return value<num;};};
 
     auto prime_nums = std::views::iota(1, 200)
         | std::ranges::views::drop_while(is_less(100))
